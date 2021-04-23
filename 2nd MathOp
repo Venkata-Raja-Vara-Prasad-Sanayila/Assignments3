@@ -1,0 +1,33 @@
+abstract class MathOp{
+    int a=10;
+    int b=19;
+    abstract void addition1();
+    abstract void subtraction1();
+    abstract void multiplication1();
+    abstract void division1();
+   
+}
+class A extends MathOp{
+    void addition1(){
+        System.out.println("Addition of "+a+" and "+b+" is : "+(a+b));
+    }
+    void subtraction1(){
+         System.out.println("Subtraction of "+a+" and "+b+" is : "+(a-b));
+    }
+    void multiplication1(){
+         System.out.println("Multiplication of "+a+" and "+b+" is : "+(a*b));
+    }
+    void division1(){
+         System.out.println("Division of "+a+" and "+b+" is : "+(a/b));
+    }
+}
+public class Sol {
+    public static void main(String args[]) {
+      A ob = new A();
+      ob.addition1();
+      ob.subtraction1();
+      ob.multiplication1();
+      ob.division1();
+
+    }
+}
