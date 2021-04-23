@@ -1,0 +1,26 @@
+abstract class MotorCycle{
+    abstract void start();
+    void haveTyres(){
+        System.out.println("I have two tyres.");
+    }
+}
+class Old_bike extends MotorCycle{
+    void start(){
+        System.out.print("I start with kick.");
+    }
+}
+class New_bike extends MotorCycle{
+    void start(){
+        System.out.print("I have self start.");
+    }
+}
+public class Sol {
+    public static void main(String args[]) {
+      Old_bike ob = new Old_bike();
+      New_bike nb = new New_bike();
+      ob.start();
+      ob.haveTyres();
+      nb.start();
+      nb.haveTyres();
+    }
+}
